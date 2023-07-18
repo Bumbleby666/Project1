@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" x:Name="CapturedImage"
+         Source="/Assets/SplashScreen.scale-200.png" Stretch="Uniform" />
+        <Button Grid.Column="0" Grid.Row="1" Height="50"
+          VerticalAlignment="Bottom" HorizontalAlignment="Center"
+          Background="{ThemeResource SystemListAccentHighColor}"
+          Content="CAPTURE" x:Name="captureBtn" Click="CaptureBtn_Click" />
     </Grid>
 </Page>
