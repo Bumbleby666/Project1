@@ -52,6 +52,8 @@ namespace CameraUWP
                     bitmapImage.SetSource(photoStream);
                 }
                 CapturedImage.Source = bitmapImage;
+
+            // Mit F5 wird die App gestartet und Freigabe der App über die Entwicklertools freischalten
             }
         }
     }
